@@ -38,7 +38,7 @@ while True:
 
     # read temperature from the temperature sensor
     temp = ss.get_temp()
-    data = "temp: " + str(temp) + "  moisture: " + str(touch)
+    data = "temperature,sensor=moisture temp_c=" + str(temp) + ",moisture=" + str(touch)
     mqttc.publish(MQTT_TOPIC,data)
 
     #print(data)
