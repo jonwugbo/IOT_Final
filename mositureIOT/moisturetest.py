@@ -42,6 +42,6 @@ while True:
     mqttc.publish(MQTT_TOPIC,data)
 
     #print(data)
-    time.sleep(5)
+    time.sleep(3)
 
     mqttc.disconnect()
